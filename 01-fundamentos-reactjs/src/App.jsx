@@ -1,8 +1,9 @@
 import { Header } from "./components/Header";
-import { Post } from "./Post";
+import { Post } from "./components/Post";
+import { Sidebar } from "./components/Sidebar";
+
 import styles from "./App.module.css";
 import "./global.css";
-import { Sidebar } from "./components/Sidebar";
 
 export function App() {
   return (
@@ -13,10 +14,14 @@ export function App() {
         <main>
           <Post
             author="Ruth Dantas"
+            profissao="Dev Frontend"
+            src="https://github.com/ruthdevgpwr.png"
             content="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
           />
           <Post
             author="Emerson Bezerra"
+            profissao="Web Developer"
+            src="https://github.com/emersondevelops.png"
             content="Quo, velit eum vel, laboriosam illum a officia corrupti exercitationem porro minus accusamus. "
           />
         </main>
